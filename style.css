@@ -11,22 +11,6 @@
   box-sizing: border-box;
 }
 
-.thumbnail {
-  width: 150px; /* Define a largura da miniatura */
-  height: 150px; /* Define a altura da miniatura */
-  object-fit: cover; /* Corta a imagem proporcionalmente sem distorcer */
-  border: 1px solid #ddd; /* Borda cinza suave */
-  border-radius: 8px; /* Bordas arredondadas */
-  padding: 4px; /* Espaçamento interno */
-  transition: transform 0.2s; /* Transição suave para o efeito */
-}
-
-/* Efeito ao passar o mouse */
-.thumbnail:hover {
-  transform: scale(1.05); /* Aumenta levemente o tamanho */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
-}
-
 body {
   margin: 0;
   min-height: 100vh;
