@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quebra-Cabeça</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="eyebrow">Arraste as peças</div>
+        <h1>Quebra-Cabeça</h1>
+        <p class="sub">
+          Monte a imagem arrastando cada peça até o lugar certo.
+        </p>
+      </header>
+
+      <div class="controls">
+        <input
+          type="text"
+          id="imgUrl"
+          placeholder="Cole a URL de uma imagem (opcional)"
+        />
+        <select id="gridSize">
+          <option value="3">3 × 3 (fácil)</option>
+          <option value="4" selected>4 × 4 (médio)</option>
+          <option value="5">5 × 5 (difícil)</option>
+        </select>
+        <button class="primary" id="newGame">Novo jogo</button>
+        <button class="ghost" id="shuffleBtn">Embaralhar</button>
+      </div>
+
+      <div class="stage">
+        <div id="board"></div>
+        <div id="tray"></div>
+        <div class="status" id="status">
+          Peças no lugar: <strong id="count">0</strong> /
+          <span id="total">0</span>
+        </div>
+        <div id="win">🎉 Parabéns! Você completou o quebra-cabeça!</div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
